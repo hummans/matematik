@@ -1,5 +1,5 @@
 import unittest
-from .matematik.arithmetic.add import add, add_nums, arr_sum, tup_sum
+from matematik.arithmetic.add import add, add_nums, arr_sum, tup_sum
 
 
 class Test_add(unittest.TestCase):
@@ -24,3 +24,7 @@ class Test_add_nums(unittest.TestCase):
 
     def test_if_it_works_with_negative_nums(self):
         pass
+
+
+if __name__ == "__main":
+    unittest.main()
