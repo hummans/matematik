@@ -32,12 +32,26 @@ def add_nums(*arg):
 def arr_sum(array):
     '''
     definition: name( array[] ) {...}
-    objective : returns the sum of all elements in that array
+    objective : returns the sum of all elements in the given array
     '''
 
     sum = 0
 
     for element in array:
+        sum += element
+
+    return sum
+
+
+def tup_sum(tuple):
+    '''
+    definition: name(tuple) {...}
+    objective : returns the sum of all elements in the given tuple
+    '''
+
+    sum = 0
+
+    for element in tuple:
         sum += element
 
     return sum
