@@ -23,10 +23,10 @@ def subtract_nums(*args):
                 will get subtracted from the before argument
     '''
 
-    result = 0
+    result = args[0]
 
-    for argument in args:
-        result -= argument
+    for i in range(1, len(args), 1):
+        result -= args[i]
 
     return result
 
