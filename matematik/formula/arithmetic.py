@@ -157,3 +157,54 @@ def tup_multiply(tuple):
         result *= element
 
     return result
+
+
+def divide(num1, num2):
+    '''
+    definition: func(arg1, arg2) {...}
+    objective : divides the given two elements
+    '''
+    return num1 / num2
+
+
+def divide_nums(*args):
+    '''
+    definition: func(arg1, arg2, ...) {...}
+    objective : you can give as many args as you want and the func divides
+                the nums from left to right
+    '''
+
+    first_arg = args[0]
+
+    for i in range(1, len(args), 1):
+        first_arg /= args[i]
+
+    return first_arg
+
+
+def arr_divide(array):
+    '''
+    definition: func( array[] ) {...}
+    objective : divides the elements of the array from left to right
+    '''
+
+    first_arg = array[0]
+
+    for i in range(1, len(array), 1):
+        first_arg /= array[i]
+
+    return first_arg
+
+
+def tup_divide(tuple):
+    '''
+    definition: func(tuple(...)) {...}
+    objective : divides the elements of the tuple from left to right
+    '''
+
+    first_element = tuple[0]
+
+    for i in range(1, len(tuple), 1):
+        first_element /= tuple[i]
+
+    return first_element

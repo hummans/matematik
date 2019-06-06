@@ -2,7 +2,8 @@ import unittest
 from matematik.formula.arithmetic import add, add_nums, arr_sum, tup_sum
 from matematik.formula.arithmetic import subtract, subtract_nums, arr_subtract
 from matematik.formula.arithmetic import tup_subtract, multiply, multiply_nums
-from matematik.formula.arithmetic import arr_multiply, tup_multiply
+from matematik.formula.arithmetic import arr_multiply, tup_multiply, divide
+from matematik.formula.arithmetic import divide_nums, arr_divide, tup_divide
 
 
 class Test_add(unittest.TestCase):
@@ -184,6 +185,42 @@ class Test_tup_multiply(unittest.TestCase):
     def test_if_the_function_works_when_first_arg_is_negative(self):
         self.assertEqual(tup_multiply((-10, 10, 10)), -1000)
 
+
+class Test_divide(unittest.TestCase):
+    '''
+    testing the function: divide()
+    '''
+
+    def test_if_the_funciton_returns_a_true_value(self):
+        self.assertEqual(divide(10, 5), 2)
+
+    def test_if_the_function_works_with_negative_nums(self):
+        self.assertEqual(divide(-10, 5), -2)
+
+
+class Test_divide_nums(unittest.TestCase):
+    '''
+    testing the function: divide_nums()
+    '''
+
+    def test_if_the_function_returns_a_true_value(self):
+        self.assertEqual(divide_nums(100, 10, 2), 5)
+
+    def test_if_the_function_works_when_first_arg_is_negative(self):
+        self.assertEqual(divide_nums(-10, 2), -5)
+
+
+class Test_arr_divide(unittest.TestCase):
+    '''
+    testing the function: multiply_nums()
+    '''
+
+    def test_if_the_function_returns_a_true_value(self):
+        self.assertEqual(arr_divide([10, 5]), 2)
+
+    def test_if_the_function_works_when_first_arg_is_negative(self):
+        self.assertEqual(arr_divide([-10, 2]), -5)
+        
 
 if __name__ == "__main__":
     unittest.main()
