@@ -31,3 +31,15 @@ class Test_subtract_nums(unittest.TestCase):
 
     def test_if_the_function_works_when_first_arg_is_negative(self):
         self.assertEqual(subtract_nums(-100, 10, 10), -120)
+
+
+class Test_arr_subtract(unittest.TestCase):
+    '''
+    testing the function: arr_subtract() from module: subtract.py
+    '''
+
+    def test_if_the test_if_the_returning_type_is_int(self);
+        pass
+
+    def test_if_the_function_returns_a_true_value(self):
+        pass
