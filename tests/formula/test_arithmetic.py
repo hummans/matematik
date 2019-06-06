@@ -76,7 +76,7 @@ class Test_subtract(unittest.TestCase):
     def test_if_the_funciton_returns_a_true_value(self):
         self.assertEqual(subtract(10, 5), 5)
 
-    def test_if_the_function_works_when_first_arg_is_negative(self):
+    def test_if_the_function_works_with_negative_nums(self):
         self.assertEqual(subtract(-10, 5), -15)
 
 
@@ -100,11 +100,89 @@ class Test_arr_subtract(unittest.TestCase):
     testing the function: arr_subtract()
     '''
 
-    def test_if_the_test_if_the_returning_type_is_int(self):
-        pass
+    def test_if_the_returning_type_is_int(self):
+        self.assertEqual(type(arr_subtract([50, 10, 10])), type(10))
 
     def test_if_the_function_returns_a_true_value(self):
-        pass
+        self.assertEqual(arr_subtract([10, 2]), 8)
+
+    def test_if_the_function_works_when_first_arg_is_negative(self):
+        self.assertEqual(arr_subtract([-10, 5, 5]), -20)
+
+
+class Test_tup_subtract(unittest.TestCase):
+    '''
+    testing the function: tuple_subtract()
+    '''
+
+    def test_if_the_returning_type_is_int(self):
+        self.assertEqual(type(tup_subtract((10, 5))), type(10))
+
+    def test_if_the_funciton_returns_a_true_value(self):
+        self.assertEqual(tup_subtract((20, 5, 5)), 10)
+
+    def test_if_the_function_works_when_first_arg_is_negative(self):
+        self.assertEqual(tup_subtract((-2, 5, 3)), -10)
+
+
+class Test_multiply(unittest.TestCase):
+    '''
+    testing the function: multiply()
+    '''
+
+    def test_if_reurning_type_is_int(self):
+        self.assertEqual(type(multiply(10, 10)), type(10))
+
+    def test_if_the_funciton_returns_a_true_value(self):
+        self.assertEqual(multiply(10, 10), 100)
+
+    def test_if_the_function_works_with_negative_nums(self):
+        self.assertEqual(multiply(-10, 10), -100)
+
+
+class Test_multiply_nums(unittest.TestCase):
+    '''
+    testing the function: multiply_nums()
+    '''
+
+    def test_if_reurning_type_is_int(self):
+        self.assertEqual(type(multiply_nums(10, 10, 10)), type(10))
+
+    def test_if_the_function_returns_a_true_value(self):
+        self.assertEqual(multiply_nums(10, 10, 10), 1000)
+
+    def test_if_the_function_works_when_first_arg_is_negative(self):
+        self.assertEqual(multiply_nums(-10, 10, 10), -1000)
+
+
+class Test_arr_multiply(unittest.TestCase):
+    '''
+    testing the function: arr_multiply()
+    '''
+
+    def test_if_reurning_type_is_int(self):
+        self.assertEqual(type(arr_multiply([10, 10, 10])), type(10))
+
+    def test_if_the_function_returns_a_true_value(self):
+        self.assertEqual(arr_multiply([10, 10, 10]), 1000)
+
+    def test_if_the_function_works_when_first_arg_is_negative(self):
+        self.assertEqual(arr_multiply([-10, 10, 10]), -1000)
+
+
+class Test_tup_multiply(unittest.TestCase):
+    '''
+    testing the function: tup_multiply()
+    '''
+
+    def test_if_reurning_type_is_int(self):
+        self.assertEqual(type(tup_multiply((10, 10, 10))), type(10))
+
+    def test_if_the_function_returns_a_true_value(self):
+        self.assertEqual(tup_multiply((10, 10, 10)), 1000)
+
+    def test_if_the_function_works_when_first_arg_is_negative(self):
+        self.assertEqual(tup_multiply((-10, 10, 10)), -1000)
 
 
 if __name__ == "__main__":
