@@ -14,7 +14,6 @@ It provides:
 - Geometry formulas
 - Trigonometry formulas
 - Precalculus formulas
-- Calculus formulas
 
 You can find how to use the package through documentation.
 
