@@ -17,6 +17,8 @@ $ pip install matematik
 After that you can easily get the math formulas with their respective level of difficulty. For example if you want to get the algebra 2 formulas you need to do :
 ```py
 from matematik.formula.algebra2 import *
+
+sum_of_cubes(5, 6)  # <-- returns you the sum of cubes of 5 and 6
 ```
 And this is basiaclly it. At the moment the following modules are included inside the `formula`:
   - arithmetic
