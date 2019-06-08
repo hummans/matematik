@@ -1,4 +1,4 @@
-# matematik  (this is where the logo will go)
+<img src="./branding/logo.png" height="60px">
 
 matematik is a package for providing and solving basic math formulas
 
@@ -20,6 +20,7 @@ You can find how to use the package through documentation.
 #### FAQ
 
 Q: Why even code something like this ?
-A: The content of the package is not that important, I have coded this to learn
-   more about python packaging. However, the contents of the package is still
-   little bit useful.
+<br>
+A: The content of the package is not that important, I have coded this project to learn
+   more about python packaging. However, the content of the package is still
+   little bit useful for people who want to rapidly get the answer of a math formula.

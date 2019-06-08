@@ -1,6 +1,6 @@
 # Title: Arithmetic Addition
 #
-# Desc: In this module you can find functions for algebra 1 formulas
+# Desc: In this module you can find functions for algebra 2 formulas
 #
 # Authors: Demir Antay -- demir99antay@gmail.com -- @demirantay
 #
@@ -53,13 +53,25 @@ def sum_of_cubes(a, b):
 
     return result
 
-def difference_of_cubes():
+
+def different_of_cubes(a, b):
+    '''
+    definition: func(a, b) {...}
+    objective : gives you the result of the formula different of cubes
+                (a-b)^3 = (a-b)(a^2 + ab + b^2)
     '''
 
-    '''
+    result = (a - b) * ((a * a) + (a * b) + (b * b))
+
+    return result
 
 
-def cube():
+def cube(x):
+    '''
+    definition: func(x) {...}
+    objective : returns the cube of x
     '''
 
-    '''
+    result = x * x * x
+
+    return result
