@@ -12,8 +12,6 @@ It provides:
 - Algebra1 formulas
 - Algebra2 formulas
 - Geometry formulas
-- Trigonometry formulas
-- Precalculus formulas
 
 You can find how to use the package through documentation.
 

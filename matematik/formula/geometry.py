@@ -101,32 +101,66 @@ def volume_of_cylander(h):
                 V=πr²h
     '''
 
+    volume = (PI * (r * r)) * h
+
+    return volume
+
 
 def volume_of_cone(r, h):
     '''
-
+    definition: func(r, h) {...}
+    objective: returns you the volume of a cone
+                1/3πr²h
     '''
+
+    volume = (1 / 3) * (PI * (r * r)) * h
+
+    return volume
 
 
 def volume_of_rect_pyramid(l, w, h):
     '''
-
+    definition: func(l, w, h) {...}
+    objective: return you the volume of a rectangular pyramid
+                V=1/3lwh
     '''
+
+    volume = (1 / 3) * l * w * h
+
+    return volume
 
 
 def volume_of_tri_pyramid(b, h):
     '''
-
+    definition: func(b, h) {...}
+    objective: returns you the volume of a triungluar pyramid
+                V=1/3(1/2bh)h
     '''
+
+    volume = (1 / 3) * ((1 / 2) * b * h) * h
+
+    return volume
 
 
 def volume_of_sphere(r):
     '''
-
+    definition: func(r) {...}
+    objective: returns you the volume of a sphere based on its r
+                V=4/3πr³
     '''
+
+    volume = (4 / 3) * PI * (r * r * r)
+
+    return volume
 
 
 def volume_of_hemisphere(r):
     '''
-
+    definition: func(r) {...}
+    objective : returns you the volume of a hemisphere based on its r
+                V=2/3πr³
     '''
+
+    volume = (2 / 3) * PI * (r * r * r)
+
+    return volume

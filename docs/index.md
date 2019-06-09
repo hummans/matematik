@@ -25,8 +25,6 @@ And this is basiaclly it. At the moment the following modules are included insid
   - algebra 1
   - algebra 2
   - geometry
-  - trigonometry
-  - precalculus
 
 <br>
 <br>
