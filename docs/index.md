@@ -146,6 +146,54 @@ Here is the list of functions inside the `algebra2.py` module:
 
   Formula : y = a (x-h)^2 + k
 
+- #### `standart(x, a, b, c)`
+  This function returns you the `y` value of the Standart Formula
+
+  Formula: y = ax^2 + bx +c
+
+- #### `axis_symetry(a, b)`
+  Returns you the `x` from the function Axis of Symetry
+
+  Formula: x = -b/2a
+
+- #### `sum_of_cubes(a, b)`
+  This function returns you the Sum of Cubes with the given parameters
+
+  Formula: (a+b)^3 = (a+b)(a^2 - ab + b^2)
+
+- #### `different_of_cubes(a, b)`
+  This functions returns you the Differnece of Cubes with the given parameters
+
+  Formula: (a-b)^3 = (a-b)(a^2 + ab + b^2)
+
+- #### `cube(x)`
+  This function returns you the cube of `x`
+
+  Formula =  x^3
+
+<br>
+<br>
+
+## geometry.py
+
+In this module you can find not all but most of the necessary geometry formulas for your equations. However, sadly at the time of writing this there is a problem with the functions that contains rational numbers so not all of the formulas of geometry is included in the module.
+
+- Here is the list of functions inside the `algebra2.py` module:
+
+- #### `area_of_triangle(b, h)`
+  This function returns you the area of a triangle with the given `base` and `height`
+
+  Formula: A=1/2bh
+
+- #### `area_of_circle(r)`
+  This function returns you the area of a circle with the given `radius`
+
+  Formula: A=πr²
+
+- #### `circumfrence(r)`
+  This functionr returns you the circumfrence of a cirlce with the given `radius`
+
+  Formula: C = 2πr
 
 
 
