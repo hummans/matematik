@@ -8,7 +8,7 @@ Table of Contents:
 
 <br>
 
-## Usage
+# Usage
 
 Firstly install this pacakage using pip:
 ```
@@ -29,25 +29,100 @@ And this is basiaclly it. At the moment the following modules are included insid
 <br>
 <br>
 
-## Reference
+# Reference
 
 In this seciton headers are named after sub package names of the package 'matematik'. You can find all of the necessary information and usage of the code in their body content.
 
-### formulas
+<br>
+
+## formulas
 
 At the moment there is only one sub pacakage of the matematik and that is: `formula`. It is a sub package that provides you quick solutions for basic formulas and returns you the answer.
 
 Lets view the modules inside this sub package:
 
-#### Arithmetic.py
+### arithmetic.py
 
 This module provides you various functions to do arithmetic operations on different kind of data structures and objects. Lets see an example:
 ```py
 from matematik.formula.arithmetic import *
 
-# add(a, b) fucntion returns you a + b
+# you can do the basic addition with
 add(6, 6)  # --> 12
+
+# you can put as many arguments as you want
+add_nums(4, 5, 1, ...)
+
+# you can add the elements inside a list
+arr_sum([5, 4, 2])
+
+# you can add the elemetns inside a tuple
+tup_sum((5, 4, 2))
 ```
+
+As you can see above the functions that this package provide is not complicated at all. The algorithm inside them is basically just a formula for the given name. All you have to do is to give the necessary parameters.
+
+Here is the list of functions inside the `arithmetic.py` module:
+
+- #### `add(arg1, arg2)`
+This function returns you the sum of arg and arg2.
+
+  Formula: arg1 + arg2
+
+- #### `add_nums(arg1, arg2, ...)`
+This function adds all of the arguments passed to it. There is no limit for passing arguments
+
+  Formula: arg1 + arg2 + ...
+
+- #### `arr_sum([...])`
+Returns you the sum of all elements inside the array. The result is added from left to right. You can use negative numbers.
+
+- #### `tup_sum((...))`
+Returns you the sum of all elements inside the tuple. The result is added from left to right. You can use negative numsbers.
+
+- #### `subtract(arg1, arg2)`
+This function returns you the subtraction of arg1 and arg2
+
+  Formula: arg1 - arg2
+
+- #### `subtract_nums(arg1, arg2, ...)`
+This function returns you the subtraction of the arguments you pass to it. There is no limit to the arguments. Beware that if you pass negative numbers to you arguments the function will make it a addition since `- * - == +`
+
+- #### `arr_subtract([...])`
+This function subtracts all the elements of the given arary. The function starts subtracting the elements from left to right. Beware that if you pass negative numbers to you arguments the function will make it a addition since `- * - == +`
+
+- #### `tup_subtract((...))`
+This function subtracts all the elements of the given tuple. The function starts subtracting the elements from left to right. Beware that if you pass negative numbers to you arguments the function will make it a addition since `- * - == +`
+
+- #### `multiply(arg1, arg2)`
+This function returns you the multiplication of the given parameters arg1 and arg2
+
+  Formula: arg1 * arg2
+
+- #### `multiply_nums(arg1, arg2, ...)`
+This function returns you the multiplication of the arguments you pass to it. There is no limit to the arguments.
+
+- #### `arr_multiply([...])`
+This function returns you the multiplication of all the elements inside the array you pass into it. You can use negative numbers.
+
+- #### `tup_multiply((...))`
+This function returns you the multiplication of all the elements inside the tuple you pass into it. You can use negative numbers.
+
+<br>
+<br>
+
+## algebra1.py
+
+This module provides you different kind of algebric equations. Sadly at the moment due to some problem at my end I couldnt use fractions so nearly 60% - 70% of the Algebra 1 formulas are not included in this module e.g. Quadratic Equation and such ...
+
+Here is the list of functions inside the `algebra1.py` module:
+
+- #### `slope_intercept(m, x, b)`
+This function returns you the `y` part of the formula called the Slope Intercept
+
+  Formula: y = mx + b
+
+- #### `point_slope(m, x1, x2)`
 
 
 <br>
