@@ -65,66 +65,92 @@ As you can see above the functions that this package provide is not complicated 
 Here is the list of functions inside the `arithmetic.py` module:
 
 - #### `add(arg1, arg2)`
-This function returns you the sum of arg and arg2.
+  This function returns you the sum of arg and arg2.
 
   Formula: arg1 + arg2
 
 - #### `add_nums(arg1, arg2, ...)`
-This function adds all of the arguments passed to it. There is no limit for passing arguments
+  This function adds all of the arguments passed to it. There is no limit for passing arguments
 
   Formula: arg1 + arg2 + ...
 
 - #### `arr_sum([...])`
-Returns you the sum of all elements inside the array. The result is added from left to right. You can use negative numbers.
+  Returns you the sum of all elements inside the array. The result is added from left to right. You can use negative numbers.
 
 - #### `tup_sum((...))`
-Returns you the sum of all elements inside the tuple. The result is added from left to right. You can use negative numsbers.
+  Returns you the sum of all elements inside the tuple. The result is added from left to right. You can use negative numsbers.
 
 - #### `subtract(arg1, arg2)`
-This function returns you the subtraction of arg1 and arg2
+  This function returns you the subtraction of arg1 and arg2
 
   Formula: arg1 - arg2
 
 - #### `subtract_nums(arg1, arg2, ...)`
-This function returns you the subtraction of the arguments you pass to it. There is no limit to the arguments. Beware that if you pass negative numbers to you arguments the function will make it a addition since `- * - == +`
+  This function returns you the subtraction of the arguments you pass to it. There is no limit to the arguments. Beware that if you pass negative numbers to you arguments the function will make it a addition since `- * - == +`
 
 - #### `arr_subtract([...])`
-This function subtracts all the elements of the given arary. The function starts subtracting the elements from left to right. Beware that if you pass negative numbers to you arguments the function will make it a addition since `- * - == +`
+  This function subtracts all the elements of the given arary. The function starts subtracting the elements from left to right. Beware that if you pass negative numbers to you arguments the function will make it a addition since `- * - == +`
 
 - #### `tup_subtract((...))`
-This function subtracts all the elements of the given tuple. The function starts subtracting the elements from left to right. Beware that if you pass negative numbers to you arguments the function will make it a addition since `- * - == +`
+  This function subtracts all the elements of the given tuple. The function starts subtracting the elements from left to right. Beware that if you pass negative numbers to you arguments the function will make it a addition since `- * - == +`
 
 - #### `multiply(arg1, arg2)`
-This function returns you the multiplication of the given parameters arg1 and arg2
+  This function returns you the multiplication of the given parameters arg1 and arg2
 
   Formula: arg1 * arg2
 
 - #### `multiply_nums(arg1, arg2, ...)`
-This function returns you the multiplication of the arguments you pass to it. There is no limit to the arguments.
+  This function returns you the multiplication of the arguments you pass to it. There is no limit to the arguments.
 
 - #### `arr_multiply([...])`
-This function returns you the multiplication of all the elements inside the array you pass into it. You can use negative numbers.
+  This function returns you the multiplication of all the elements inside the array you pass into it. You can use negative numbers.
 
 - #### `tup_multiply((...))`
-This function returns you the multiplication of all the elements inside the tuple you pass into it. You can use negative numbers.
+  This function returns you the multiplication of all the elements inside the tuple you pass into it. You can use negative numbers.
 
 <br>
 <br>
 
 ## algebra1.py
 
-This module provides you different kind of algebric equations. Sadly at the moment due to some problem at my end I couldnt use fractions so nearly 60% - 70% of the Algebra 1 formulas are not included in this module e.g. Quadratic Equation and such ...
+This module provides you different kind of algebric equations. Sadly at the moment due to some problem at my end I couldn't use rational numbers so nearly 60% - 70% of the Algebra 1 formulas are not included in this module e.g. Quadratic Equation and such ...
 
 Here is the list of functions inside the `algebra1.py` module:
 
 - #### `slope_intercept(m, x, b)`
-This function returns you the `y` part of the formula called the Slope Intercept
+  This function returns you the `y` part of the formula called the Slope Intercept
 
   Formula: y = mx + b
 
 - #### `point_slope(m, x1, x2)`
+  This function returns you the value of "y1 - y2" in a equation where we use the Point Slope formula
+
+  Formula: y1 - y2 = m(x1 - x2)
+
+- #### `slope_formula(x1, x2, y1, y2)`
+  This function returns you the slope (`m`) based on the given parameters.
+
+  Formula:  m = y2 - y1 / x2 - x1
+
+<br>
+<br>
+
+## algebra2.py
+
+In this module you can find not all but most of the necessary algebra 2 formulas for your equations. However, sadly at the time of writing this there is a problem with the functions that contains rational numbers so not all of the formulas of algebra 2 is included in the module.
+
+Here is the list of functions inside the `algebra2.py` module:
+
+- #### `vertex(a, x, h, k)`
+  This function returns you the `y`'s value from the formula called vertex
+
+  Formula : y = a (x-h)^2 + k
 
 
+
+
+
+<br>
 <br>
 <br>
 

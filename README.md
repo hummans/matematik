@@ -2,9 +2,10 @@
 
 matematik is a package for providing and solving basic math formulas
 
-- Documentation: [click here](./docs/index.md)
-- Sourcecode:https://github.com/demirantay/matematik
-- Website: coming soon ...
+- Documentation : https://github.com/demirantay/matematik/blob/master/docs/index.md
+- Sourcecode :https://github.com/demirantay/matematik
+- PyPi : https://pypi.org/project/matematik/
+- Website : coming soon ...
 
 It provides:
 
