@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="matematik",
-    version="1.1.1",
+    version="1.2.1",
     author="Demir Antay",
     author_email="demir99antay@gmail.com",
     description="An package for solving math equations",

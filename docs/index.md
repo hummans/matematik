@@ -39,6 +39,11 @@ In this seciton headers are named after sub package names of the package 'matema
 
 At the moment there is only one sub pacakage of the matematik and that is: `formula`. It is a sub package that provides you quick solutions for basic formulas and returns you the answer.
 
+In order to use the contents of this sub-package you can import it with this dot notation:
+```python
+from matematik.formula.<module_name> import <obj_name>
+```
+
 Lets view the modules inside this sub package:
 
 ### arithmetic.py
@@ -194,6 +199,56 @@ In this module you can find not all but most of the necessary geometry formulas 
   This functionr returns you the circumfrence of a cirlce with the given `radius`
 
   Formula: C = 2πr
+
+- #### `area_of_rect(l, w)`
+  This function returns you the area of a rectangle based on its length and height
+
+  Formula: A= length x width
+
+- #### `trapezoid_midsegment(b1, b2)`
+  This function returns you the midsegment of a trapezeoid based on its two bases
+
+  Formula: 1/2 (base 1 + base 2)
+
+- #### `volume_of_rect_prism(l, w, h)`
+  This function returns you the volume of a rectangular prism based on its length width and height
+
+  Formula: V = lwh
+
+- #### `volume_of_tri_prism(b, h)`
+  This function returns you the volume of a triungular prism based on its base and height value
+
+  Formula: V=(1/2bh)h
+
+- #### `volume_of_cylander(h)`
+  This function returns you the volume of a cylinder based on its height
+
+  Formula: V=πr²h
+
+- #### `volume_of_cone(r, h)`
+  This function returns you the volume of a cone based on its radius and height
+
+  Formula: 1/3πr²h
+
+- #### `volume_of_rect_pyramid(l, w, h)`
+  Returns you the volume of a rectangular pyramid based on its length width and height
+
+  Formula: V=1/3lwh
+
+- #### `volume_of_tri_pyramid(b, h)`
+  Returns you the volume of a triangular pyramid based on its base and height
+
+  Formula: V=1/3(1/2bh)h
+
+- #### `volume_of_sphere(r)`
+  Returns you the volume of a sphere based on its radius
+
+  Formula: V=4/3πr³
+
+- #### `volume_of_hemisphere(r)`
+  Returns you the volume of a hemisphere based on its radius
+
+  Formula: V=2/3πr³
 
 
 
